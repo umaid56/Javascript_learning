@@ -24,7 +24,7 @@ const newStudents = [
 // console.log(result);
 
 //4 Using map Method
-// let result = students.map(({grade}) => grade).fill(100);
+// let result = students.fill(100);
 // console.log(result)
 
 //5 Using filter Method
