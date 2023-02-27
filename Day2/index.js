@@ -15,7 +15,7 @@ const newStudents = [
 // console.log("All students", result);
 
 //2 Using iterator Method
-// for (let[index, value] of Object.entries(students)){
+// for (let[index, value] of students.entries(){
 //     console.log(`On index no. ${index} the name is ${value.name} and grade is ${value.grade}`);
 // }
 
@@ -61,6 +61,8 @@ const newStudents = [
 // console.log(result);
 
 //13
+// let indexOf = students.map(({name}) => name).indexOf("Bob");
+// console.log(indexOf);
 
 //14 Using map Method
 // let result = students.map(({grade}) => grade);
@@ -81,6 +83,12 @@ const newStudents = [
 // console.log(result);
 
 //18 Using shift Method
-let result = students.shift();
-// console.log(result);
-console.log(students);
+// let result = students.shift();
+// // console.log(result);
+// console.log(students);
+
+//19
+let sum = students.reduce((old, { grade }) => {
+  return old + grade;
+}, 0);
+console.log(sum / students.length);
